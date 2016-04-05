@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+dependencies {
+
+    def domainDependencies  = rootProject.ext.domainDependencies
+    compile   domainDependencies.rxJava
+}

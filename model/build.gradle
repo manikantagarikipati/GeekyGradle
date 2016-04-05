@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+dependencies {
+
+    def modelDependencies  = rootProject.ext.modelDependencies
+    compile   modelDependencies.rxJava
+    compile   modelDependencies.fireBase
+}

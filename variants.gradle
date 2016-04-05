@@ -1,0 +1,36 @@
+ext {
+
+        basePackageName       = 'com.geekmk.geekygradle'
+        resAppColorName       = 'build_brand_primary'
+        resAppName            = 'build_app_name'
+        fieldShowsAds         =  'ADS'
+
+    paid = [
+
+            packageName : "${basePackageName}.premium",
+            appName     : "Paid GeekMk App",
+            appColor    : "#F44336",
+            showAds     :  "false",
+            versionName :  "2.1.1",
+            versionCode :   4
+    ]
+
+    free = [
+            packageName : "${basePackageName}.free",
+            appName     : "Enjoy GeekMk free App",
+            appColor    : "#4CAF50",
+            showAds     : "true",
+            versionName : "0.8",
+            versionCode :  1
+    ]
+
+    promo = [
+            packageName : "${basePackageName}.promo",
+            appName     :  "Geeky Gradle Demo",
+            appColor    :  "#9C27B0",
+            showAds     : "true",
+            versionName : "1.1",
+            versionCode : 11
+    ]
+
+}

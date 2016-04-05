@@ -1,0 +1,27 @@
+ext {
+
+    butterKnifeVersion      = '7.0.1'
+    supportLibrary          = '23.2.1'
+    firebase                = '2.3.1'
+    rxAndroidVersion      = '0.25.0'
+    rxJavaVersion         = '1.0.10'
+
+
+    presentationDependencies = [
+
+            butterKnife         : "com.jakewharton:butterknife:$butterKnifeVersion",
+            appCompat           : "com.android.support:appcompat-v7:$supportLibrary",
+            androidDesignLib    : "com.android.support:design:$supportLibrary",
+    ]
+
+
+    domainDependencies = [
+            rxJava              :   "io.reactivex:rxjava:${rxJavaVersion}",
+    ]
+
+    modelDependencies = [
+            fireBase            : "com.firebase:firebase-client-android:$firebase",
+            rxJava              : "io.reactivex:rxjava:$rxJavaVersion",
+    ]
+
+}
